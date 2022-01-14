@@ -21,3 +21,5 @@
 big box
 with text
 ```
+
+**Added bold text**
