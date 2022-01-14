@@ -57,12 +57,43 @@ The terminal should look like this once you have completed the steps
 **You are now connected to the ieng6 server!!**
 <br>
 ## 3) Trying Some Commands
-
-
-
-
+Now that you are in the server, time to test out some commands! You can try these commands, and compare them to the results below
 <br>
-Moving Files with scp
+```
+ls
+ls -a
+ls -la
+```
+<br>
+<img src="photos/SSHCommands.png" alt="VSCodeScreenshot" width="500"/>
+<br>
+If you want to try more commands, search "Linux Terminal Commands" for more commands to try. Enter `exit` or CTRL-D to leave the SSH
+<br>
+
+## 4) Moving Files with `scp`
+Now we are going to practice moving files from your local hardware to the ieng6 server. To begin we will create a new file on our local system. In VSCode create a new file named `WhereAmI.java` and enter the following code.
+```
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+```
+Then run `javac WhereAmI.java` followed by `java WhereAmI` to see the results, somwhat similar to this.
+```
+Windows 10
+agamam
+C:\Users\agmam
+C:\Users\agmam\OneDrive\Documents\GitHub\CSE_things\CSE15
+```
+<br>
+Now that `WhereAmI.java` runs, we can copy
+
+
+
 <br>
 Setting an SSH Key
 <br>
