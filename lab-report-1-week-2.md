@@ -89,12 +89,38 @@ agamam
 C:\Users\agmam
 C:\Users\agmam\OneDrive\Documents\GitHub\CSE_things\CSE15
 ```
+Now that `WhereAmI.java` runs, we can enter the code(replace zz's with your code):
+```
+scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+```
+This will copy the `WhereAmI.java` to the server, and you can check by logging in to the ssh and using 'ls' to see it in the directory. And you can compile and run it to see new results!
 <br>
-Now that `WhereAmI.java` runs, we can copy
-
-
-
+## 5) Setting up an SSH Key
+After loggin in mutliples times to the SSH it is starting to get a bit tiring to enter your password everytime, so to help speed up the process we will create a key to let the server know that it is us logging in to our accout.
+<br><br>
+First you want to exit from the ieng6 server using 'exit' or CTRL-D, and then you want to enter the following command `ssh-keygen` 
+<br><br>
+<img src="photos/SSHKeygen.png" alt="VSCodeScreenshot" width="500"/>
 <br>
-Setting an SSH Key
+Now you will login to the SSH again and add a file named .ssh using the command `mkdir .ssh` as shown below.
 <br>
-Optimizing Remote Running
+<img src="photos/mkSSHfile.png" alt="VSCodeScreenshot" width="500"/>
+<br>
+Then you exit the SSH and back on your local system enter the following code, except replacing the <> part with your own information
+```
+scp /Users/<Local Username>/.ssh/id_rsa.pub cs15lwi22<id>@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+And lastly enter your password. After this SSH back into the ieng6 servers and you will see that you no longer have to enter your password.
+
+## 6) Optimizing Remote Running
+Lastly to help you remotely run programs on the ieng6 servers here are a few commands that can help you automate the process.
+<br><br>
+By using semicolons, you can run multiple commands in the same line
+```
+javac WhereAmI.java; java WhereAmI
+```
+Also you can log into a server and run commands by putting them in "" (quotes) to run multiple commands
+```
+scp WhereAmI.java cs15lwi22axo@ieng6.ucsd.edu:~/; ssh cs15lwi22axo@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
+```
+This command copies WhereAmI.java to the server, compiles it and runs it all in one command.
