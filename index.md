@@ -24,3 +24,7 @@ with text
 
 **Added bold text**
 even more changes online
+
+[Lab Report 1](lab-report-1-week-2.html)
+<br>
+[Lab Report 1](https://AntDaKnee.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
