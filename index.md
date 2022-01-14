@@ -1,30 +1,4 @@
-## Hello New Page
-
-*look some fancy text*
-
-**BOLD TEXT**
+# Anthony Gonzalez's CSE15L Website
+## Lab Reports
+[Lab Report 1 - Week 2](lab-report-1-week-2.html)
 <br>
->And
->It
->Is
->A
->Blockquote
-
-1. One
-2. Two
-3. Buckle My Shoe
-***
-
-`in a box`
-
-```
-big box
-with text
-```
-
-**Added bold text**
-even more changes online
-
-[Lab Report 1](lab-report-1-week-2.html)
-<br>
-[Lab Report 1](https://AntDaKnee.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
