@@ -93,7 +93,9 @@ Now that `WhereAmI.java` runs, we can enter the code(replace zz's with your code
 ```
 scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
 ```
-This will copy the `WhereAmI.java` to the server, and you can check by logging in to the ssh and using 'ls' to see it in the directory. And you can compile and run it to see new results!
+This will copy the `WhereAmI.java` to the server, and you can check by logging in to the ssh and using 'ls' to see it in the directory. And you can compile and run it to see results like the one below.
+<br>
+<img src="photos/scp update.png" alt="VSCodeScreenshot" width="400"/>
 <br>
 ## 5) Setting up an SSH Key
 After loggin in mutliples times to the SSH it is starting to get a bit tiring to enter your password everytime, so to help speed up the process we will create a key to let the server know that it is us logging in to our accout.
@@ -123,4 +125,6 @@ Also you can log into a server and run commands by putting them in "" (quotes) t
 ```
 scp WhereAmI.java cs15lwi22axo@ieng6.ucsd.edu:~/; ssh cs15lwi22axo@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
 ```
-This command copies WhereAmI.java to the server, compiles it and runs it all in one command.
+This command copies WhereAmI.java to the server, compiles it and runs it all in one command as seen below.
+<br>
+<img src="photos/remoterunning.png" alt="VSCodeScreenshot" width="500"/>
