@@ -12,6 +12,6 @@
 [Lab Report 4 - Week 8](lab-report-4-week-8.html)
 <br>
 
-[Lab Report 4 - Week 8](lab-report-5-week-10.html)
+[Lab Report 5 - Week 10](lab-report-5-week-10.html)
 <br><br>
 <img src="photos/NALAAA.jpg" alt="VSCodeScreenshot" width="200"/>
